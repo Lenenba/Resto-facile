@@ -1,0 +1,6 @@
+ private static final String FIND_CLIENT_URL = "http://192.168.1.3/resto/LoginClient.php";
+    private static final String REGISTER_CLIENT_URL = "http://192.168.1.3/resto/Register.php";
+    private static final String REGISTER_RESERVATION_URL = "http://192.168.1.3/resto/ReservationRegister.php";
+    final static String URL_LIST_RESTO = "http://192.168.1.3/resto/listResto.php";
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants"
+    android:transitionGroup="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/plat_selector"
+        android:descendantFocusability="afterDescendants"
+        tools:context="com.example.jules.restofacile.CommanderActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            android:src="@drawable/jus"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIBELLE DU PLAT"
+            android:id="@+id/libelle"
+            android:layout_alignTop="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:layout_toEndOf="@+id/img"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOM DU RESTO"
+            android:id="@+id/nom"
+            android:textSize="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/libelle"
+            android:layout_alignStart="@+id/libelle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categorie du plat"
+            android:id="@+id/cat"
+            android:layout_alignBottom="@+id/img"
+            android:layout_alignLeft="@+id/libelle"
+            android:layout_alignStart="@+id/libelle"
+            android:textIsSelectable="false"
+            android:textSize="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIX"
+            android:id="@+id/prix"
+            android:textSize="10dp"
+            android:layout_alignBottom="@+id/cat"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#a30830" />
+
+    </RelativeLayout>
+</FrameLayout>
